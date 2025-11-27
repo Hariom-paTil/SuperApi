@@ -38,7 +38,7 @@ namespace SuperApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<superHero>>> AddSuperHero(superHero hero)
+        public async Task<ActionResult<List<superHero>>> PostSuperHero(superHero hero)
         {
             superHeroes.Add(hero);
             return Ok(superHeroes);
